@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+
+        // Parameters
+        function sayHiStudent(name, lastName) {
+            console.log(`¡HOLA, ${name} ${lastName}!`)
+        }
+
+
+        // Arguments
+        sayHiStudent('Alejandro', 'Abad')
+        sayHiStudent('Hugo', 'Paniagua')
+
+
+
+
+
+
+
+
+
+        // Example 1: parámetros por defecto
+        function generateBookingDetails1(customer, date, price, category = 'ESTÁNDAR') {
+            const details = `Estimado/a ${customer.name} ${customer.lastName}, su reserva para el día ${date} está confirmada, para una habitación ${category} (${price}€)`
+            console.log(details)
+        }
+
+        generateBookingDetails1({ name: 'German', lastName: ' Álvarez' }, '12/12/2023', 647, 'VISTA MAR')
+        generateBookingDetails1({ name: 'Mónica', lastName: ' Sánchez' }, '13/12/2023', 657)
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
